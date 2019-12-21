@@ -1,0 +1,14 @@
+FORTRAN 90 code to evaluate the time evolution and the ground sate of atomic BEC using the Gross-Pitaevskii equation. 
+
+
+BEC-Crank-Nicolson-3D-ground*.f90 : imaginary time evolution of the 3D GPE to evaluate the ground state
+BEC-Crank-Nicolson-3D-timeEvol.f90: Real time evolution of the GPE.
+
+CN_paralelo_ground*.f90   : imaginary time evolution of the GPE using mpi.
+CN_paralelo_time_evo*.f90 : Real time evolution of the GPE using mpi.
+
+
+Copyright (c) 2007, 2012, 2019  German Sinuco (gsinuco@gmail.com)
+
+
+

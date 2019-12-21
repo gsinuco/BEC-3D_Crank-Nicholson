@@ -1,0 +1,11 @@
+CC = mpic++
+GF = mpif90
+GFFLAGS = -llapack -L/cm/shared/apps/lapack/gcc/64/3.4.0
+CFLAGS =  -lgsl  -I/cm/shared/apps/gsl/gcc/include/ -lgslcblas -O3  
+
+
+all: BEC-ground
+
+BEC-ground: CN_paralelo_ground.f90  
+	$(GF)  -o $@ CN_paralelo_ground.f90 $(GFFLAGS) 
+

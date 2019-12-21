@@ -1,0 +1,11 @@
+CC = mpic++
+GF = mpif90
+GFFLAGS = -L/usr/lib64/atlas/lib -llapack -lf77blas -lcblas -latlas -lgsl -lgslcblas -O3 
+CFLAGS =  -lgsl -lgslcblas -O3  
+
+
+all: BEC-ground
+
+BEC-ground: CN_paralelo_ground.f90  
+	$(GF)  -o $@ CN_paralelo_ground.f90 $(GFFLAGS) 
+
